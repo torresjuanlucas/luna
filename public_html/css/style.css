@@ -1,0 +1,835 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31-Mar-2018, 6:29:36 PM
+    Author     : LUCAS
+*/
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Syncopate', sans-serif;
+}
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    background: #000;
+    z-index: 999;
+}
+
+.menu {
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.menu i {
+    font-size: 35px;
+    color: #F5B041;
+    opacity: 0.6;
+}
+
+#menu-hidden {
+    position: absolute;
+    right: -15px;
+    top: 50px;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    cursor: pointer;
+    align-items: center;
+    display: none;
+    padding-top: 100px;
+}
+
+#menu-hidden a {
+    font-family: 'Syncopate', sans-serif;
+    font-size: 24px;
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+    width:200px;
+    margin: 10px auto;
+    color: #F5B041;
+    opacity: 0.6;
+    padding: 2px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: letter-spacing 0.3s;
+}
+
+#menu-hidden a:hover {
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.luna-container {
+    position: relative;
+    text-align: center;
+    background: #000;
+    width: 210px;
+    font-size: 0;
+    z-index: 999;
+}
+
+.luna-container .letterL {
+    display: inline-block;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    font-size: 55px;
+    opacity: 0.8;
+    padding: 60px 0 10px 0;  
+    background: url('../img/wood-2.jpg');
+    background-attachment: fixed;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.luna-container .letterU {
+    display: inline-block;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    font-size: 55px;
+    opacity: 0.8;
+    padding: 60px 0 10px 0; 
+    background: url('../img/wood-2.jpg');
+    background-attachment: fixed;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.luna-container .letterN {
+    display: inline-block;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    font-size: 55px;
+    opacity: 0.8;
+    padding: 60px 0 10px 0; 
+    background: url('../img/wood-2.jpg');
+    background-attachment: fixed;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.luna-container .letterA {
+    display: inline-block;
+    font-family: 'Syncopate', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    font-size: 55px;
+    opacity: 0.8;
+    padding: 60px 0 10px 0; 
+    background: url('../img/wood-2.jpg');
+    background-attachment: fixed;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+@media (max-width: 767px){
+    .luna-container .letterL,
+    .luna-container .letterU,
+    .luna-container .letterN,
+    .luna-container .letterA 
+    {
+        padding-top: 10px; 
+        padding-bottom: 0; 
+        font-size: 30px;
+    }
+}
+
+#banner {
+    padding-top: 60px;
+    width: 100%;
+    background: #000;
+    height: 100vh;
+    background: url('../img/interior-13.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#banner .title {
+    text-align: right;
+    position: relative;
+    width: 35%;
+    margin-top: 170px;
+    background: rgba(247, 249, 249,0.5);
+    border-right: 3px solid #17202A;
+    border-top: 1px solid #17202A;
+}
+
+#banner .title .title-top{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 22px;
+    color: #17202A;
+    font-weight: 400;
+    padding: 10px 0 5px 0;
+    margin-right: 20px;
+    letter-spacing: 2px;
+}
+
+#banner .title .title-bottom{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 22px;
+    color: #17202A;
+    font-weight: 500;
+    padding: 10px 0 5px 0;
+    margin-right: 20px;
+    letter-spacing: 2px;
+    text-shadow:2px 2px 30px #717D7E;
+}
+
+@media (max-width: 768px ) {
+
+    #banner .title {
+        width: 100%;
+    }
+
+    #banner .title .title-top {
+        font-size: 18px;
+    }
+
+    #banner .title .title-bottom  {
+        font-size: 18px;
+    }
+
+}
+
+#introduction {
+    margin: 0;
+    padding: 0;
+}
+
+#introduction .side-text {
+    margin: 0;
+    padding: 0;
+    border-top: 5px solid #fff;
+    border-right: 2.5px solid #fff;
+    border-bottom: 5px solid #fff;
+    background: url('../img/interior-7.jpg')left center no-repeat fixed;
+    background-size: cover;
+}
+
+#introduction .side-text .side-text-container {
+    background: rgba(247, 249, 249,0.6);
+    margin: 50px 10px 50px 10px;
+    padding: 10px 0;
+}
+#introduction .side-text .side-text-container .side-text-container-inner {
+    background: rgba(0,0,0,0.1);
+    margin: 20px 10px;
+    border-right: 3px solid #17202A;
+    border-top: 1px solid #17202A;
+}
+
+#introduction .side-text .side-text-container .side-text-container-inner h3{
+    margin: 5px 10px 5px 10px;
+    text-align: right;
+    font-family: 'Exo', sans-serif;
+    font-size: 20px;
+    color: #17202A;
+    font-weight: 400;
+    padding: 10px 0 5px 0;
+    margin-left: 20px;
+    letter-spacing: 2px;
+    width: 90%;
+}
+
+#introduction .side-text .side-text-container h4{
+    margin-top: 10px;
+    text-align: right;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    color: #17202A;
+    font-weight: 400;
+    padding: 10px 0 10px 0;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    width: 90%;
+}
+
+#introduction .image {
+    margin: 0;
+    padding: 0;
+    border-top: 5px solid #fff;
+    border-left: 2.5px solid #fff;
+    border-bottom: 5px solid #fff;
+    opacity: 0.9;
+}
+
+#introduction .image img{
+    width: 100%;
+    height: auto;
+}
+
+#services {
+    margin: 0;
+    padding: 40px 0;
+}
+
+.section-heading {
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    color: #17202A;
+    font-weight: 600;
+    padding: 20px 0 20px 0;
+    text-align: center;
+}
+
+#services .services-column {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: 2px solid #fff;
+}
+
+#services .image-box-1 {
+    background: url(../img/interior-9.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    height: 200px;
+    border-top: 5px solid #000;
+    transition: background-size 0.2s;
+}
+
+#services .image-box-1:hover {
+    background-size: 110%;
+}
+
+#services .image-box-2 {
+    background: url(../img/interior-12.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    height: 200px;
+    border-top: 5px solid #000;
+    transition: background-size 0.3s;
+}
+
+#services .image-box-2:hover {
+    background-size: 110%;
+}
+
+#services .image-box-3 {
+    background: url(../img/interior-11.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    height: 200px;
+    border-top: 5px solid #000;
+    transition: background-size 0.2s;
+
+}
+
+#services .image-box-3:hover {
+    background-size: 110%;
+}
+
+#services a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+    color: #000;
+    font-weight: 400;
+}
+
+#services h3 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 20px;
+    background: rgba(127, 140, 141,0.8);
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+#services p {
+    margin: 0;
+    padding: 5px 20px;
+    font-size: 12px;
+    background: rgba(127, 140, 141,0.8);
+    text-align: justify;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+#portfolio {
+    margin: 0;
+    padding: 40px 0 0 0;
+}
+
+#portfolio .portfolio-column {
+    margin: 0;
+    padding: 0;
+}
+
+#portfolio .portfolio-column .portfolio-box {
+    border: 2px solid #fff;
+
+}
+
+
+#portfolio .portfolio-column .portfolio-box img {
+    width: 100%;
+    height: 300px;
+    opacity: 1;
+}
+
+#portfolio .portfolio-column .portfolio-box img:hover {
+    opacity: 0.8;
+}
+
+#quote {
+    margin: 0;
+    padding: 40px 20px;
+    background: url('../img/wood-background.jpg')center center no-repeat fixed;
+    background-size: auto;
+    height: 300px;
+}
+
+#quote .quote-column {
+    padding: 0;
+    border: 5px solid #fff;
+    height: auto;
+}
+
+#quote h2 {
+    margin: 10px;
+    padding: 0;
+    font-size: 24px;
+    text-decoration: none;
+    font-style: italic;
+    font-family: 'Exo', sans-serif;
+    color: #fff;
+    font-weight: 400;
+}
+
+#quote .img-signature {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#quote p {
+    margin: 5px;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width: 768px ) {
+
+
+    #quote {
+        background: url('../img/wood-background.jpg')left bottom no-repeat fixed;
+        height: 320px;
+    }
+
+    #quote h2 {
+        font-size: 18px;
+    }
+
+    #quote .img-signature {
+        width: auto;
+        height: 40px;
+    }
+
+    #quote p {
+        font-size: 12px;
+    }
+
+}
+
+#clients {
+    margin: 0;
+    padding: 0;
+}
+
+#clients .clients-column {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #E59866;
+}
+
+#clients .img-clients {
+    display: inline-block;
+    margin: 20px 10px;
+    padding: 0;
+    width: auto;
+    height: 50px;
+}
+
+@media (max-width: 768px ) {
+
+    #clients .img-clients {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+#footer {
+    margin-top: 0;
+    padding: 0;
+    background: url('../img/footer-background.jpg')center center no-repeat;
+    background-size: cover;
+}
+
+#footer .footer-column {
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+#footer .borders {
+    margin: 10px 100px;
+    border: 5px solid #fff;
+
+}
+
+#footer h3 {
+    margin: 0;
+    padding: 10px 0 20px 0;
+    font-size: 42px;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    border-top: 1px solid #2C3E50;
+    border-right: 3px solid #2C3E50;
+}
+
+#footer p {
+    margin: 0;
+    padding: 0 0 5px 0;
+    font-size:18px;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    border-right: 3px solid #2C3E50;
+    letter-spacing: 1px;
+}
+
+#footer .img-lights {
+    padding: 0 0 20px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+    display: block;
+}
+
+#footer h4 {
+    margin: 0;
+    padding: 10px 0;
+    font-size:18px;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+#footer a {
+    border: 0;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.5s;
+
+}
+
+#footer a:hover {
+    color: #ABB2B9;
+}
+
+@media (max-width: 768px ) {
+    #footer .borders {
+        margin: 10px 40px;
+    }
+}
+
+/*************** inner pages *****************/
+
+
+#inner-page-banner {
+    padding-top: 60px;
+    width: 100%;
+    height: 70vh;
+    background: url('../img/inner-page-banner-1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#inner-page-banner .inner-page-title {
+    text-align: right;
+    position: relative;
+    width: 58%;
+    margin-top: 170px;
+    background: rgba(247, 249, 249,0.5);
+    border-right: 3px solid #17202A;
+    border-top: 1px solid #17202A;
+}
+
+#inner-page-banner .inner-page-title .title-top{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 36px;
+    color: #17202A;
+    font-weight: 400;
+    padding: 20px 0 20px 0;
+    margin-right: 20px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 768px ) {
+
+    #inner-page-banner {
+        height: 50vh;
+    }
+
+    #inner-page-banner .inner-page-title {
+        margin-top: 60px;
+        width: 75%;
+    }
+
+    #inner-page-banner .inner-page-title .title-top {
+        font-size: 22px;
+    }
+
+}
+
+#inner-page-content {
+    margin: 0;
+    padding: 20px 0; 
+}
+
+/*************** story page *****************/
+
+.story-column {
+    margin: 0;
+    padding: 0;
+}
+
+.image-column {
+    margin: 0;
+    padding: 0;
+}
+
+.image-column .img-story {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-top:2px solid #000;
+    border-right:5px solid #000;
+}
+
+.story-box {
+    margin: 5px 60px;
+    /*    border:5px solid #000;*/
+}
+
+.story-box p {
+    margin: 15px;
+    padding: 5px;
+    color: #000;
+    font-family: 'Exo', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+@media (max-width: 768px ) {
+
+    .story-column {
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .story-box {
+        padding: 10px;
+        margin: 10px 20px;
+        border:4px solid #000;
+    }
+
+    .story-box p {
+        margin: 12px;
+        padding: 5px;
+        color: #000;
+        font-family: 'Exo', sans-serif;
+        font-size: 16px;
+        text-align: justify;
+
+    }
+
+}
+
+/*************** contact page *****************/
+
+#contact_form{ 
+    margin: 10px 20px;  
+}
+
+#contact_form legend{
+    font-size: 15px; 
+    color: #000;
+}
+
+#contact_form label{
+    margin-bottom:28px;
+    display: block;
+    color: #000;
+    font-family: 'Exo', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+#contact_form label span{
+    float:left;
+    width:100px; 
+    color: #000;
+    font-family: 'Exo', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+
+
+#contact_form input{
+    width: 100%;
+    height: 40px;
+    padding-left: 4px;
+    color: #000;
+    font-family: 'Exo', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border: 2px solid #000;
+
+}
+
+#contact_form textarea{
+    width: 100%;
+    height:100px; 
+    padding-left: 2px;
+    color: #000;
+    font-family: 'Exo', sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    border: 2px solid #000;
+}
+
+.submit_btn { 
+    padding: 12px;
+    float: left;
+    width: 100px;
+    background: transparent;
+    border: 2px solid #000;
+}
+
+.submit_btn:hover { 
+    color: #fff;
+    background: #000;
+}
+
+.success{ 
+    background: #00A243;
+    padding: 10px; 
+    margin-bottom: 10px; 
+    border: 1px solid #B9ECCE; 
+    border-radius: 5px; 
+    font-weight: normal; 
+}
+.error{ 
+    background: #F44C4C; 
+    padding: 10px; 
+    margin-bottom: 10px;
+    border: 1px solid #FFCACA; 
+    border-radius: 5px; 
+    font-weight: normal;
+}
+
+.contact_text{
+    text-align: right;
+    margin-top: 48px;
+}
+
+.contact_text p{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.contact_text h3{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.contact_info{
+
+}
+
+.contact_info li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+
+.contact_social{
+    margin-top: 5px;
+}
+
+.contact_social li{
+    display: inline;
+    margin-left: 15px;
+} 
+
+/*************** portfolio page *****************/
+
+
+
+
+
+
+
+
+

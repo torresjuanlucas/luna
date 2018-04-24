@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>LUNA website</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link href="./lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Days+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Exo:400,500" rel="stylesheet">
+
+    </head>
+    <body>
+        <section id="header">
+            <nav>
+                <div class="menu">
+                    <i class="fa fa-bars" onclick="expand()"></i>
+                    <div id="menu-hidden">
+                        <a href="index.html" class="">home</a>
+                        <a href="story.html" class="">story</a>
+                        <a href="portfolio.html" class="">portfolio</a>
+                        <a href="contact.html" class="">contact</a>
+
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+
+                        <div class="luna-container animated slideInDown">
+                            <h1 class="letterL animated fadeIn">l</h1>
+                            <h1 class="letterU animated fadeIn">ü</h1>
+                            <h1 class="letterN animated fadeIn">n</h1>
+                            <h1 class="letterA animated fadeIn">a</h1>
+                        </div>
+                    </div>     
+                </div>      
+            </div>
+        </section>
+
+
+        <section id="inner-page-banner" class="animated fadeIn">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="inner-page-title animated slideInLeft">
+                            <h1 class="title-top">
+                                -Our story
+                            </h1>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </section>
+
+        <section id="inner-page-content" class="animated fadeIn">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="image-column col-lg-6 col-md-6 col-sm-12 col-12">
+                        <img src="img/inner-page-banner-2.jpg" alt="" class="img-story" />
+                    </div>
+                    <div class="story-column col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="story-box animated fadeIn">
+                            <p>
+                                Lüna stems from a lineage of carpenters, architects and designers. 
+                                By creating bespoke designs through the use of fine natural materials, crafted and presented with precision, we seek to embody authentic design in every-day life with a unique edge.
+                                Since 2014 Lüna has expanded it’s focus from interior design to the production of bespoke furniture, most notably in the hospitality industry.
+                            </p>
+                            <p>
+                                With a fascination for material exploration and through testing the performance of various natural materials, the founder’s love of wood design developed.
+                                Every item is created using the finest materials and the highest attention to detail, resulting in durable products of undisputed quality.  
+                            </p>
+                            <p>
+                                Come and try our designs for yourself, we are sure you are going to love them.
+                                </p>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+        </section>
+
+
+        <section id="clients" class="animated fadeIn">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="clients-column col-lg-12 col-md-12 col-sm-12 col-12">
+                        <img src="img/clients/logo-1.png" alt="" class="img-clients" />
+                        <img src="img/clients/logo-2.png" alt="" class="img-clients" />
+                        <img src="img/clients/logo-3.png" alt="" class="img-clients" />
+                        <img src="img/clients/logo-4.png" alt="" class="img-clients" />
+                        <img src="img/clients/logo-5.png" alt="" class="img-clients" />
+                        <img src="img/clients/logo-6.png" alt="" class="img-clients" />
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <img src="img/lights.png" alt="" class="img-lights" />
+                    </div>
+                    <div class="footer-column col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="borders">
+                            <h3>
+                                lüna
+                            </h3>
+                            <p>1212 St-Jean</p>
+                            <p>H3W 5H6</p>
+                            <p>Montreal, Canada</p>
+                            <p>514-442-2257</p>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            <h4>Copyright 2018. All rights reserved.Web design by <a>Lucas torres</a></h4>
+        </footer>
+
+
+
+
+        <script src="js/bootstrap.js"></script>
+        <script>
+                        function expand() {
+                            var x = document.getElementById("menu-hidden");
+                            if (x.style.display === "block") {
+                                x.style.display = "none";
+                            } else {
+                                x.style.display = "block";
+                            }
+                        }
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
